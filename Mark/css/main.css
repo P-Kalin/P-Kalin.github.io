@@ -38,7 +38,10 @@ footer {
     padding-right: 15px;
   }
 }
-
+header {
+  background: #fff;
+  z-index: 2;
+}
 @media (max-width: 992px) {
   header.container-fluid {
     padding: 0;
