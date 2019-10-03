@@ -7,17 +7,18 @@
 
 @media (max-width: 992px) {
 	.nav-item {
-		margin: 0 auto;
+		text-align: center;
+		border-bottom: 1px solid #535353;
 	}
 }
 
 @media (max-width: 840px) {
-	.carousel-item {
-		padding: 150px 70px 0 70px;
-	}
 
 	.carousel-item h1{
 		font-size: 40px;
+		padding-left: 30px;
+		padding-right: 30px;
+		transform: translateY(-65%);
 	}
 
 	.about p {
@@ -36,12 +37,16 @@
 }
 
 @media (max-width: 500px) {
+	.carousel-item {
+		height: 650px;
+	}
+	.carousel-item h1{
+		font-size: 30px;
+	}
 	.details-item{
 		flex-basis: 100%;
 		max-width: 100%;
 	}
 
-	.carousel-item {
-		padding: 100px 0 0 0;
-	}
+
 }

@@ -77,21 +77,20 @@ a:hover {
 }
 
 .carousel-control-next, .carousel-control-prev {
-    width: 10%;
+	width: 10%;
 }
 
 .carousel-item {
 	height: 750px;
-	padding: 200px 70px 0 70px;
 }
 
 .carousel-item .btn {
 	position: absolute;
-    text-align: center;
-    bottom: 60px;
-    left: 50%;
-    margin-left: -58px;
-    font-size: 16px;
+	text-align: center;
+	bottom: 60px;
+	left: 50%;
+	margin-left: -58px;
+	font-size: 16px;
 }
 
 .carousel-item__first {
@@ -102,15 +101,21 @@ a:hover {
 	background-size: cover;
 }
 
+.carousel-item h1 {
+	margin-top: 50vh;
+    transform: translateY(-50%);
+    font-size: 48px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
 .carousel-item__first h1,
 .carousel-item__third h1 {
 	color: #fff;
-	font-size: 48px;
 }
 
 .carousel-item__second h1 {
 	color: #000;
-	font-size: 48px;
 }
 
 .carousel-item__second {
@@ -247,10 +252,23 @@ a:hover {
 	transition: all .4s;
 }
 
+/*Background*/
+
+/*#background {
+	background: linear-gradient(
+		rgba(0,0,0,0.4),
+		rgba(0,0,0,0.4)
+		), 
+	url('../img/about_ford.png') no-repeat center top;
+	-webkit-background-size: cover;
+	background-size: cover;
+}*/
+
 /* About */
 
 #about {
 	height: auto;
+	padding: 100px 0;
 	background: linear-gradient(
 		rgba(0,0,0,0.5),
 		rgba(0,0,0,0.5)
@@ -259,7 +277,12 @@ a:hover {
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
-	padding: 100px 0;
+		
+	/* background: linear-gradient(
+		rgba(0,0,0,0.4),
+		rgba(0,0,0,0.4)
+		), 
+	url('../img/FASAD02.jpg') no-repeat center top; */
 }
 
 .about h2 {
@@ -278,13 +301,41 @@ a:hover {
 	margin-top: 50px;
 }
 
-/*Contacts*/
+/*Test block*/
 
-/*Dark*/
+#about-more {
+	height: auto;
+	background: linear-gradient(
+		#c7cacc9c,
+		#c7cacc9c
+		), url('../img/moto.jpg') no-repeat center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.about-more__item {
+	color: #000;
+	margin: 50px 0;
+}
+
+.about-more__item h3 {
+	font-weight: 700;
+	font-size: 34px;
+}
+
+.about-more__item p {
+	margin-top: 12px;
+	font-weight: 600;
+	font-size: 28px;
+}
+
+/*Contacts*/
 
 #contacts {
 	padding: 40px 0;
 	background: #343a40;
+
 }
 
 .contacts-title {
@@ -352,10 +403,25 @@ a:hover {
 footer {
 	color: #fff;
 	border-top: 2px solid #535353;
-	padding: 30px 0;
+	padding: 15px 0;
 	background: #343a40;
 }
 
 .footer {
 	margin: 0;
+	font-size: 14px;
+}
+
+footer a{
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	display: block;
+	padding: 5px;
+}
+
+footer a:hover{
+	color: #3190ff;
+	transition-duration: .3s;
+	transform: translateY(-3px);
 }
